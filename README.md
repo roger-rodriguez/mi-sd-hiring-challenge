@@ -4,7 +4,7 @@ Movable Ink is a software company that provides marketers with technology to cre
 
 In this code challenge, you will be in charge of creating a view that renders the forecast for a specific location. Please, use plain HTML, CSS, and JS.
 
-**Don't spend more than an hour on this.** The goal of this challenge is to get a sense for how you reason about a problem and structure your code _not_ if you can finish it.
+**Don't spend more than two hours on this.** The goal of this challenge is to get a sense for how you reason about a problem and structure your code _not_ if you can finish it.
 
 ## Challenge details
 
@@ -14,7 +14,7 @@ Requirements for the challenge:
 1. Use the data from the geolocation endpoint to make a second call to the **forecast endpoint**.
 1. Use the data from both endpoints to generate the creative found [here.](/img/creative_mock_up.gif)
 1. Your code should be as maintainable and extensible as possible.
-1. Please timebox this exercise to 1 hour.
+1. Please timebox this exercise to 2 hour.
 
 ## Get Started
 
