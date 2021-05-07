@@ -1,0 +1,58 @@
+#app {
+	width: 810px;
+	height: 300px;
+	margin: 0 auto;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	border: 2px solid black;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+}
+
+ul li {
+	border: 1px solid black;
+	list-style: none;
+	width: 130px;
+	height: 120px;
+	margin: 10px;
+}
+
+ul li h3 {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #6b9cbd;
+	color: white;
+}
+
+.iconDesc {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+li div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+img {
+	position: relative;
+	left: 18%;
+	height: 50px;
+}
+li div p {
+	margin-top: 0px;
+}
