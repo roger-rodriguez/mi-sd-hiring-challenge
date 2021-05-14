@@ -1,0 +1,17 @@
+#forecastContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(143, 143, 143, 0.397);
+}
+
+.dayContainer {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    background-color: rgb(23, 120, 247);
+    text-align: center;
+}
