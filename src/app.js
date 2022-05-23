@@ -17,6 +17,7 @@ async function buildApp(){
         <td class="material-icons">${forecast.icon}</td>
         <td>${forecast.summary}</td>
         </tr>`;
+        //I was going to implement a for loop to iterate over each day but I ran out of time
     document.getElementById('forecast').innerHTML = tab;
 }
 
