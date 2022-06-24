@@ -1,3 +1,6 @@
-import { convertDate } from "./utils";
+import GeoWeatherForecast from './GeoWeatherForecast';
+import './GeoWeatherForecast/WeatherForecast.module.scss';
 
-console.log("hello world");
+window.addEventListener('DOMContentLoaded', async (event) => {
+  document.querySelector('#app').innerHTML = await GeoWeatherForecast();
+});
