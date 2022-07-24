@@ -1,0 +1,35 @@
+body * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+article,aside,footer,header,nav,section {
+    display:block;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
+h3 {
+    font-size: 1.5rem;
+}
+.three-day-forecast-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.forecast {
+    display: inline-flex;
+    padding: 1em;
+}
+/* Todo: Add more styling elements to resemble creative mockup provided!
