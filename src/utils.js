@@ -50,16 +50,21 @@ async function getforecastApi(latitude, longitude) {
 	}
 }
 
+// Get the weather days based on the zip code and coordinates
 export async function getDisplayWheather() {
 	const zipInput = input.value;
 	// Retrieve the location data
 	let location = await getLocation(zipInput);
 	const { city, latitude, longitude, regionCode } = location;
 
-	//Retrieve the coordinates from the location
-	const coordinates = await getforecastApi(latitude, longitude);
-	const { daily } = coordinates;
+	if (city === undefined && regionCode === undefined) {
+		alert("Please search for a valid zip code 😩");
+	} else {
+		//Retrieve the coordinates from the location
+		const coordinates = await getforecastApi(latitude, longitude);
+		const { daily } = coordinates;
 
-	// function to display the wheather and create the dynamic html with js
-	createWeatherElementData1(daily, city, regionCode);
+		// function to display the wheather and create the dynamic html with js
+		createWeatherElementData1(daily, city, regionCode);
+	}
 }
