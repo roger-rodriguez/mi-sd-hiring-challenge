@@ -9,3 +9,21 @@ const icons = {
 	snow,
 	sun,
 };
+
+function getDay(index) {
+	const weekday = [
+		"Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+	];
+	const date = new Date();
+	let day = date.getDay();
+	day + index > 6 ? day : day - 7;
+	return weekday[day + index];
+}
+
+getDay(1);
