@@ -27,6 +27,7 @@ function getDay(index) {
 }
 
 export function createWeatherElementData1(daily, city, regionCode) {
+	const threeDaysOnly = daily.data.slice(2);
 	const weatherContainer = document.createElement("div");
 	weatherContainer.className = "weather-container";
 	app.append(weatherContainer);
@@ -40,7 +41,9 @@ export function createWeatherElementData1(daily, city, regionCode) {
 	forecastContainer.className = "forecast-container";
 	weatherContainer.append(forecastContainer);
 
-	daily.data.forEach((day, index) => {
+	// SHOWING THE WEATHER FOR 3 DAYS
+	//  for (let i = 0; i < 3; i++)
+	threeDaysOnly.forEach((day, index) => {
 		const dayContainer = document.createElement("div");
 		dayContainer.className = "day-container";
 		forecastContainer.append(dayContainer);
