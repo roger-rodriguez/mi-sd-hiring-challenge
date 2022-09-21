@@ -1,3 +1,4 @@
+import { createWeatherElementData1 } from "./date.js";
 /**
  *
  * @param {number} time - Unix time in seconds returns it in miliseconds
@@ -28,7 +29,6 @@ async function getLocation(input) {
 		);
 	}
 }
-getLocation(10001);
 
 // Get the weather based on the location coordinates
 // This is the endpoint for retrieving the weather forecast data associated with at a lat/lon. This endpoint should be called with `GET` and accepts three query string parameters (`latitude`, `longitude`, `date`).
@@ -49,9 +49,8 @@ async function getforecastApi(latitude, longitude) {
 		);
 	}
 }
-getforecastApi(40.7505, -73.9934);
 
-async function getDisplayWheather() {
+export async function getDisplayWheather() {
 	const zipInput = input.value;
 	// Retrieve the location data
 	let location = await getLocation(zipInput);
@@ -60,4 +59,7 @@ async function getDisplayWheather() {
 	//Retrieve the coordinates from the location
 	const coordinates = await getforecastApi(latitude, longitude);
 	const { daily } = coordinates;
+
+	// function to display the wheather and create the dynamic html with js
+	createWeatherElementData1(daily, city, regionCode);
 }
