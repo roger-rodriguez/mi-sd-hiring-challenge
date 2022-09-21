@@ -26,6 +26,9 @@ function getDay(index) {
 	return weekday[day + index];
 }
 
+// function capitalizeFirstLetter(string) {
+// 	return string.charAt(0).toUpperCase() + string.slice(1);
+// }
 export function createWeatherElementData1(daily, city, regionCode) {
 	const threeDaysOnly = daily.data.slice(2);
 	const weatherContainer = document.createElement("div");
