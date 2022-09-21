@@ -123,7 +123,9 @@ input[type="number"] {
 	align-items: center;
 	justify-content: space-evenly;
 }
-
+.weather-description::first-letter {
+	text-transform: capitalize;
+}
 .weather-header {
 	padding-top: 4rem;
 	padding-bottom: 2rem;
