@@ -4,11 +4,49 @@
 <head>
   <title>Movable Ink</title>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+  <meta name="description"
+        content="Weather hiring-challenge" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app"
+       class="wrapper">
+    <header class="header">
+      <h1 class="header__title">Weather App</h1>
+    </header>
+    <div class="search-form">
+      <section class="input-part">
+        <form id="form"
+              class="form-container">
+          <div class="content">
+            <input type="number"
+                   id="zipcode-input"
+                   required
+                   minlength="5"
+                   maxlength="5"
+                   placeholder="Type Zip Code" />
+            <div class="separator"></div>
+            <button type="submit"
+                    id="submit-button">Go</button>
+        </form>
+        <div>
+          <img class="logo "
+               src="./img/logo.svg"
+               alt="" />
+          <h1>hiring-challenge Task</h1>
+        </div>
+
+
+    </div>
+    </section>
+  </div>
+  </div>
+  <script src="./src/app.js"></script>
 </body>
-<script src="src/app.js"></script>
 
 </html>
