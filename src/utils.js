@@ -10,6 +10,7 @@ const geoAPI = "https://se-weather-api.herokuapp.com/api/v1/geo";
 const forecastAPI = "https://se-weather-api.herokuapp.com/api/v1/forecast";
 const input = document.getElementById("zipcode-input");
 
+// This is the endpoint for retrieving the geo data associated with a given zip code. This endpoint should be called with `GET` and accepts a single query string parameter (`zip_code`).
 async function getLocation(input) {
 	try {
 		const response = await fetch(`${geoAPI}?zip_code=${input}`);
@@ -28,6 +29,9 @@ async function getLocation(input) {
 	}
 }
 getLocation(10001);
+
+// Get the weather based on the location coordinates
+// This is the endpoint for retrieving the weather forecast data associated with at a lat/lon. This endpoint should be called with `GET` and accepts three query string parameters (`latitude`, `longitude`, `date`).
 async function getforecastApi(latitude, longitude) {
 	let date = new Date().toLocaleDateString();
 	console.log(date);
