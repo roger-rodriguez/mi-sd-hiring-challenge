@@ -53,10 +53,11 @@ getforecastApi(40.7505, -73.9934);
 
 async function getDisplayWheather() {
 	const zipInput = input.value;
-
+	// Retrieve the location data
 	let location = await getLocation(zipInput);
 	const { city, latitude, longitude, regionCode } = location;
 
+	//Retrieve the coordinates from the location
 	const coordinates = await getforecastApi(latitude, longitude);
 	const { daily } = coordinates;
 }
