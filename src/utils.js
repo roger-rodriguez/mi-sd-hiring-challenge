@@ -50,3 +50,13 @@ async function getforecastApi(latitude, longitude) {
 	}
 }
 getforecastApi(40.7505, -73.9934);
+
+function getDisplayWheather() {
+	const zipInput = input.value;
+
+	let location = getLocation(zipInput);
+	const { city, latitude, longitude, regionCode } = location;
+
+	const coordinates = getforecastApi(latitude, longitude);
+	const { daily } = coordinates;
+}
