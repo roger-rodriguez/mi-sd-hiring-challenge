@@ -14,8 +14,8 @@ Requirements for the challenge:
 1. Use the data from the geolocation endpoint to make a second call to the **forecast endpoint**.
 1. Use the data from both endpoints to generate the creative found [here.](/img/creative_mock_up.gif).  Don't stray from this creative!
 1. Your code should be as maintainable and extensible as possible.
-2. Do not include additional libraries or packages.  The work our team does utilizes mostly vanilla JavaScript.
-3. Please timebox this exercise to 2 hours.
+1. Do not include additional libraries or packages.  The work our team does utilizes mostly vanilla JavaScript.
+1. Please timebox this exercise to 2 hours.
 
 ## Get Started
 
